@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notes & practice work</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="week01.css">
+    <script>
+        function loadStory() {
+            var storyName = document.getElementById("story_name").value;
+            var storyHTML = localStorage.getItem(storyName);
+            document.getElementById("story").value = storyHTML;
+        }
+        function saveSTory() {
+            var storyName = document.getAnimations("story_name").value;
+            var storyHTML = document.getElementById("story").value;
+            localStorage.setItem(storyName, storyHTML);
+        }
+        function displayStory() {
+            var storyHTML = document.getElementById("story").value;
+            document.getElementById("story_display").innerHTML = storyHTML;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Story Editor - Practice Work</h1>
+    <label>Story Name:</label>
+    <input id="story_name"></input>
+    <section id="buttons">
+        <button onclick="loadStory()">Find and Edit</button>
+        <button onclick="saveStory()">Save</button>
+        <button onclick="displayStory()">Display</button></section>
+
+    <textarea id="story" placeholder="write your story here..."></textarea>
+    <section id="story_display"></section>
+
+    <h1>Notes</h1>
+    <p>Local storage is pretty interesting me. I'm curious how much it is used from the developer 
+        side instead of storing information to a database? What are the data limits for local storage, 
+        etc? It seems great that you aren't forced to use backend languages like php to store data, but 
+        also risky depending on the content being stored. I would imagine sensitive user information 
+        would be a huge no-no!</p>
+
+</body>
+
+</html>
