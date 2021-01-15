@@ -4,8 +4,12 @@ const links = [
         url: "week01/story_editor.html"
     },
     {
-        label: "Week 02: coming soon...",
+        label: "Week 02: JS Reading Notes",
         url: "week02/week02.html"
+    },
+    {
+        label: "Week 03: coming soon...",
+        url: "week03/week03.html"
     }
 ];
 
