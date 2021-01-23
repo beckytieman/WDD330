@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 03</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    </script>
+    <link rel="stylesheet" href="week03.css">
+</head>
+
+<body>
+
+    <div class="bg-light text-center p-3">
+        <h1 class="display-4">Week 03 Notes</h1>
+    </div>
+    <section class="notes">
+        <h2>Article - Object Methods: this</h2>
+        <ul>
+            <li>Remember: " this " is not bound; it does not depend on where method is declared only what object is
+                before " . "</li>
+            <li>arrow functions have no " this ", when referenced, it will be taken from outside function</li>
+        </ul>
+        <h2>Reading Ch5: Objects</h2>
+        <ul>
+            <li>Object Literals: great for creating objects quickly without having to define a class</li>
+            <ul>
+                <li>all properties/methods in single { }</li>
+                <li>each property is a key-value pair, comma seperated</li>
+                <li>can serve as namespace to prevent naming collisions (reusing a variable name by mistake)</li>
+            </ul>
+            <li>add new properties by assigning new value with dot notation, but remember they won't always appear in the order entered. </li>
+            <li>Objects can be passed as parameters, argument order doesn't have to be exactly the same</li>
+            <li>JSON - looks similar to object literal but has important differences:</li>
+            <ul>
+                <li>property name must be double-quoted</li>
+                <li>cannot use functions as values!</li>
+                <li>.parse() converts string data in JSON to JS object </li>
+                <li>.stringify() takes JS object and returns JSON data *will ignore functions</li>
+            </ul>
+            <li><a href="https://www.w3schools.com/jsref/jsref_obj_math.asp">JavaScript Math Object reference @ w3schools</a></li>
+            <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp">JavaScript Date Object reference @ w3schools</a></li>
+            <li><a href="https://momentjs.com/">moment.js library</a></li>
+            <li><a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp">JavaScript RegExp reference @ w3schools</a></li>
+        </ul>
+        <h2>Reading Ch6: Document Object Model</h2>
+        <ul>
+            <li>Node lists are like arrays in the way you can use index notation but they do NOT support array methods(ie: slice, splice, join)</li>
+            <li>you can convert to an array with Array.from() or spread operator [...]</li>
+            <li> .querySelector or .querySelectorAll can be very powerful and precise when used with CSS notation & psueudo-selectors</li>
+            <li>function example for creating elements:</li>
+            <img src="exampleCode.JPG">
+            <li>alternative to changing css style on an element is to add a class to it that reflects desired css change</li>
+        </ul>
+        <h2>Reading Ch7: Events</h2>
+        <ul>
+            <li>events go with functions; will not be executed until event occurs(use page load if you don't want to wait for user)</li>
+            <li>touch events are cool, but be careful using them</li>
+            <li><a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Event Handler reference @ w3schools</a></li>
+
+
+
+
+    </section>
+
+    <footer class="bg-light text-center p-4">
+        <a class="btn btn-secondary" href="../index.html">Home Portfolio</a>
+    </footer>
+</body>
+
+</html>
