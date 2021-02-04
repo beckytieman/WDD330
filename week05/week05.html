@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 05</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    </script>
+    <link rel="stylesheet" href="../week03/week03.css">
+</head>
+
+<body>
+
+    <div class="bg-light text-center p-3">
+        <h1 class="display-4">Week 05 Notes</h1>
+    </div>
+    <section class="notes">
+        <h2>Reading Ch10: Testing and Debugging</h2>
+        <ul>
+            <li>System Errors - not much influence here, but be aware of issues</li>
+            <li>Programmer Errors - incorrect syntax or logic...try to predict as much as possible to ensure good user experience</li>
+            <li>User Error - usually incorrect data entered by user, BUT we should anticpate and design in a way to prevent theses issues</li>
+            <li>Fail Loudly - make sure exceptions are caught so you can deal with them and fix code...this is easier and more ideal than silent errors that taker forever to pinpoint.</li>
+            <li>Using Strict Mode</li>
+            <ul>
+                <li>produces more exceptions/warnings; prohibits use of deprecated features</li>
+                <li>Helps to improve code clarity and speed</li>
+                <li>'use strict' is added to first line of JavaScript file, but recommended to use in self-invoking fucntions (especially if code sharing)</li>
+                <li>modules are strict mode by default</li>
+            </ul>
+            <li>Feature Detection to ensure browser supported features (use Modernizr or Can I Use for resources)</li>
+            <li>Browser Debugging and Console Work</li>
+            <ul>
+                <li>use breakpoints and alert() method outdated</li>
+                <li>get familiar with broweser built in dev tools</li>
+            </ul>
+            <li>Test-Driven Development - "any tests are better than no test al all"</li>
+            <li>consider usuing a TDD framework like Jest</li>
+        </ul>
+        
+    </section>
+    <section class="practice-code"><div class="bg-light text-center p-3">
+        <h1 class="display-4">Practice Code</h1>
+    </div>
+    <div class="links"><a href="teamw05.html">Team Assignment</a></section></div>
+    
+    
+    <footer class="bg-light text-center p-4">
+        <a class="btn btn-secondary" href="../index.html">Home Portfolio</a>
+    </footer>
+</body>
+
+</html>

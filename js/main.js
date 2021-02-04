@@ -16,12 +16,12 @@ const links = [
         url: "week04/week04.html"
     },
     {
-        label: "Week 05: Testing and Debugging (under construction)",
-        url: "week04/week05.html"
+        label: "Week 05: Testing and Debugging",
+        url: "week05/week05.html"
     },
     {
         label: "Week 06: Coming Soon...",
-        url: "week04/week06.html"
+        url: "week06/week06.html"
     }
 ];
 
