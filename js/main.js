@@ -20,8 +20,12 @@ const links = [
         url: "week05/week05.html"
     },
     {
-        label: "Week 06: Coming Soon...",
+        label: "Week 06: Todo App Challenge",
         url: "week06/week06.html"
+    },
+    {
+        label: "Week 07: coming soon",
+        url: "week07/week07.html"
     }
 ];
 

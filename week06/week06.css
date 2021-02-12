@@ -1,0 +1,106 @@
+footer {
+    min-height: 100vh;
+}
+.todoApp {
+    width: 550px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(245, 225, 189);
+    border-radius: 5px;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.appBody {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.title {
+    text-align: center;
+}
+.addTaskDiv form{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+}
+.addTask {
+    border: none;
+    flex-grow: 1;
+    outline: 0;
+}
+.addTask-btn {
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.addTask-btn {
+    color: #6c757d;
+}
+.addTask-btn:hover {
+    color: rgb(20, 167, 167);
+}
+.taskStatus {
+    margin: 2rem 0;
+}
+.taskStatus {
+    display: flex;
+    justify-content: space-between;
+}
+.statusBtns {
+    display: flex;
+    justify-content: space-between;
+}
+.statusBtn {
+    border-radius: 4px;
+    border: 1px solid rgb(20, 167, 167);
+    background-color: rgb(20, 167, 167);
+    padding: .1rem .5rem;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 .25rem;
+}
+.statusBtn:hover{
+    background-color:rgb(8, 196, 196);
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.taskItem {
+    display: flex;
+    flex-grow: 1;
+    padding-left: 5px;
+
+}
+.taskList {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.addedTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #6c757d;
+}
+.taskList-btns {
+    color: #6c757d;
+    border: none;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.checked {
+    text-decoration: line-through;
+}
+
