@@ -1,0 +1,125 @@
+.square {
+    display: inline-block;
+    background-color: #00d9b5;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin: 1rem;
+    transform: rotate(30deg);
+}
+
+.square2 {
+    display: inline-block;
+    background-color: #00d9b5;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin: 1 rem;
+    transform: skew(20deg);
+}
+.square-spin {
+    display: inline-block;
+    background-color: #00d9b5;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin: 1rem;
+    transform: rotate(30deg);
+    -webkit-animation: roll 5s infinite;
+          animation: roll 5s infinite;
+}
+@-webkit-keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .curtain {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /*anything overflowing the div won't show*/
+  }
+  
+  .curtain_wrap {
+    /*makes sure curtain takes up all the space of the container*/
+    width: 100%;
+    height: 100%;
+  }
+  
+  .panel { /*properties for both panels*/
+    background: teal;
+    width: 50%; /*only take up half the width*/
+    height: 100vh; /*take up all height of container*/
+    float: left; /*floats panel side by side*/
+    position: relative; /* to set up z-index for layers*/
+    z-index: 2; /*panels will be layered on top of behind curtain content*/
+    transition: all 1s ease-out; /*slows down the transform to appear more like an animation */
+    display: flex; /*control position of text*/
+    align-items: center; /*text is centered vertically*/
+  }
+  
+  p {
+    margin: 20rem 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 45px;
+  }
+  
+  .inside {
+    color: black;
+    font-size: 30px;
+  }
+  
+  .left {
+    justify-content: flex-end; /*push text to right side of panel */
+    transform: translateX(-100%); /*will slide left panel out of container*/
+  }
+  .right {
+    transform: translateX(100%); /*will slide right panel out of container*/
+  }
+  .behind {
+    
+    text-align: center;
+    position: absolute;
+    z-index: 1; /*keeps content behind panels layer until moved*/
+    width: 100%;
+    height: 100%;
+    background: yellowgreen; 
+    
+  }
+  
+  input {
+    position: absolute;
+    cursor: pointer; /*using a pointer makes the area seem clickable to user*/
+    /*makes sure checbox is as large as container*/
+    width: 100%;
+    height: 100%;
+    z-index: 10; /*make sure it is higher than index 2 so it will be the top layer*/
+    opacity: 0; /*makes it invisble*/
+    
+  }
+  input[type=checkbox]:checked ~ div.left {
+    transform: translateX(0); /*when checkbox is clicked the left side will go back to orginal location*/
+  }
+  
+  input[type=checkbox]:checked ~ div.right {
+    transform: translateX(0); /*when checkbox is clicked the right side will go back to orginal location*/
+  }
