@@ -33,7 +33,7 @@ const links = [
     },
     {
         label: "Week 09: coming soon",
-        url: "week08/week08.html"
+        url: "week09/week09.html"
     }
 ];
 
