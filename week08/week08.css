@@ -123,3 +123,19 @@
   input[type=checkbox]:checked ~ div.right {
     transform: translateX(0); /*when checkbox is clicked the right side will go back to orginal location*/
   }
+
+  .svgcontainer {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+  }
+  .rectangle {
+            fill:darkred;
+            stroke:black;
+            stroke-width:5;
+            opacity:0.5;
+      }
+  #bird {
+    stroke: black;
+    stroke-width: .5;
+  }
