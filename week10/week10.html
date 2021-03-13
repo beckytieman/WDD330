@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Local Quakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main>
+        <h1>Quake List</h1>
+        <p id="demo">200</p>
+        <fieldset>
+            <p>Start Date: <input type="date" id="startDate" value="2021-01-01"></p>
+            <p>End Date: <input type="date" id="endDate" value="2021-12-31"></p>
+            <p>Quakes Within <select id="kmRadius" name="kmRadius">
+                    <option value="200">200</option>
+                    <option value="150">150</option>
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                    <option value="20">20</option>
+                    <option value="10">10</option>
+                    <option value="5">5</option>
+                </select> km</p>
+            <p><button id="btn_reload" onclick="myFunction();" class="btn btn-success">Find
+                    Quakes</button>
+            </p> <!-- TO DO-->
+        </fieldset>
+        <ul id="quakeList"></ul>
+    </main>
+</body>
+<script src="index.js" type="module"></script>
+<script src="Quake.js" type="module"></script>
+<script>
+    const x = document.getElementById("kmRadius").selectedIndex;
+
+    function myFunction() {
+        const x = document.getElementById("kmRadius").selectedIndex;
+        const y = document.getElementById("kmRadius").options;
+        document.getElementById("demo").innerHTML = y[x].text;
+    }
+</script>
+
+</html>
