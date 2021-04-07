@@ -19,7 +19,7 @@ body{
 }
 #img-logo {
     margin-left: 1rem;
-    max-height: 80px;
+    max-height: 50px;
 }
 h1 {
     font-family: 'Permanent Marker', cursive;
@@ -27,6 +27,8 @@ h1 {
 }
 p {
     font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    text-align: center;
 }
 .links {
     font-family: 'Oswald', sans-serif;
@@ -50,6 +52,7 @@ p {
     color:  #212529;
     text-decoration: none;
     transition: background-size .2s;
+    font-size: 18px;
   }
 a {
     text-decoration: none;
@@ -63,7 +66,6 @@ a:hover {
     background-color: #6b816f ;
 }
 .cuisine {
-      height: 100vh;
       background-color: rgb(185,99,79);
 }
 
@@ -81,6 +83,7 @@ a:hover {
 h2{
       font-family: 'Oswald', sans-serif;
       font-size: 38px;
+      padding: 1rem;
 }
 h5 {
     color:  rgb(238, 238, 238);
@@ -101,8 +104,11 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100% 
+     
+}
+.meals {
+    display: flex;
+    flex-direction: column;
 }
 .img-card{
     height: 10rem;
@@ -111,7 +117,7 @@ h5 {
 }
 .card-container {
     padding: 1rem;
-    width: 33.3333333%;
+    
     display: block;
 }
 .card {
@@ -152,6 +158,9 @@ h5 {
     max-width: 1280px;
     margin: 0 auto;
 }
+.show-results {
+    justify-content: space-evenly;
+}
 
 /*----Recipes Page---*/
 .recipe-card {
@@ -181,7 +190,39 @@ h5 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .cuisine {
+        height: 100vh;
+        background-color: rgb(185,99,79);
+    }
+    p {
+        padding: 0;
+    }
+    .hero div{
+        width: 75%;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: flex;  
+        flex-direction: column;
+    }
+    #img-logo{
+        max-height: 50px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .links {
+        font-size: 20px;
+    }
+    
+    
 }
+
 
 /*----large---*/
 @media only screen and (min-width: 64em) {
@@ -189,5 +230,30 @@ h5 {
         display: flex;
         justify-content: space-around;
         max-width: 900px;
+    }
+    .meals {
+        display: flex;
+        flex-direction: row;
+    }
+    .card-container {
+        padding: 1rem;
+        width: 33.3333333%;
+        display: block;
+    }.menu-plan {
+        height: 100vh;
+        width: 100%
+    }
+    .hero div{
+        width: 50%;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+    #img-logo {
+        max-height: 80px;
+    }
+    h1 {
+        font-size: 34px;
     }
 }
